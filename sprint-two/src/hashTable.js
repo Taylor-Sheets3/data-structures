@@ -33,10 +33,8 @@ HashTable.prototype.retrieve = function(k) {
     // iterate through array
     currentIndex.forEach(function(item) {
       // if object key = k
-      console.log(item);
       if (item.hasOwnProperty(k)) {
         // return v
-        console.log(item[k]);
         foundItem = item[k];
       }
     });
